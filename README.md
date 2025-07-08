@@ -6,8 +6,8 @@ A sleek, minimal, and responsive note-taking web application built using **React
 
 ## 🔗 Live Demo
 
-**Netlify:** [https://your-netlify-site.netlify.app](https://your-netlify-site.netlify.app)  
-**Vercel:** [https://your-vercel-site.vercel.app](https://your-vercel-site.vercel.app)
+**Netlify:** [https://your-netlify-site.netlify.app](https://glittery-twilight-2d79fc.netlify.app/)  
+**Vercel:** [https://your-vercel-site.vercel.app](https://keeper-app-tau-five.vercel.app/)
 
 ---
 
