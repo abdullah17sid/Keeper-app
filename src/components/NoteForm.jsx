@@ -22,26 +22,28 @@ const NoteForm = ({ onSave, editNote }) => {
   };
 
   return (
-    <div className="bg-white p-4 shadow-md rounded max-w-md mx-auto">
+    <div className=" p-4 border shadow-xl rounded max-w-md mx-auto">
       <input
         type="text"
         placeholder="Title"
-        className="w-full border p-2 mb-2 rounded"
+        className="w-full p-2 mb-2 rounded"
         value={title}
         onChange={(e) => setTitle(e.target.value)}
       />
       <textarea
         placeholder="Take a note..."
-        className="w-full border p-2 mb-2 rounded"
+        className="w-full p-2 mb-2 rounded"
         value={content}
         onChange={(e) => setContent(e.target.value)}
       ></textarea>
+      <div className="flex justify-end">
       <button
-        className="w-full bg-yellow-400 hover:bg-yellow-500 text-black py-2 rounded font-semibold"
+        className="absolute left 1/2 w-10 rounded-full bg-yellow-400 hover:bg-yellow-500 text-white py-2 rounded font-semibold"
         onClick={handleSubmit}
       >
         {editNote ? "Update" : "Add"}
       </button>
+      </div>
     </div>
   );
 };

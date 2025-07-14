@@ -36,7 +36,9 @@ const App = () => {
         onSave={handleSave}
         editNote={editIndex !== null ? notes[editIndex] : null}
       />
-      <div className="mt-6 space-y-4 max-w-md mx-auto flex-grow">
+      
+      {/* ✅ Updated section to show notes inline */}
+      <div className="mt-6 flex flex-wrap gap-4 justify-center">
         {notes.map((note, i) => (
           <Note
             key={i}
@@ -46,6 +48,7 @@ const App = () => {
           />
         ))}
       </div>
+
       <Footer />
     </div>
   );
